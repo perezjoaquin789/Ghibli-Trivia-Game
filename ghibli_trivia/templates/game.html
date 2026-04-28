@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego</title>
+</head>
+
+<body style="font-family: Arial; background: linear-gradient(to right, #dfe9f3, #ffffff); text-align:center;">
+
+    <div style="margin-top:60px;">
+
+        <h2>Pregunta {{ numero }} de 10</h2>
+
+        <p style="color:gray;">Dificultad: {{ session.dificultad }}</p>
+
+        <p style="font-size:22px; margin:20px;">
+            {{ pregunta.pregunta }}
+        </p>
+
+        <form method="POST">
+
+            {% for opcion in pregunta.opciones %}
+                <button 
+                    type="submit"
+                    name="respuesta"
+                    value="{{ opcion }}"
+                    style="
+                        display:block;
+                        margin:10px auto;
+                        padding:12px;
+                        width:300px;
+                        font-size:16px;
+                        border-radius:6px;
+                        border:none;
+                        background-color:#2196F3;
+                        color:white;
+                        cursor:pointer;">
+                    
+                    {{ opcion }}
+                </button>
+            {% endfor %}
+
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ghibli Trivia</title>
+</head>
+
+<body style="font-family: Arial; background: linear-gradient(to right, #dfe9f3, #ffffff); text-align:center;">
+
+    <div style="margin-top:80px;">
+
+        <h1 style="font-size:40px;">🎬 Ghibli Trivia Challenge</h1>
+
+        <p style="font-size:18px; color:gray;">
+            Demostrá cuánto sabés sobre Studio Ghibli
+        </p>
+
+        <form action="/start" method="POST" style="margin-top:30px;">
+
+            <p style="font-weight:bold;">Elegí dificultad:</p>
+
+            <select name="dificultad" 
+                    style="padding:10px; font-size:16px; border-radius:5px;">
+                <option value="facil">Fácil</option>
+                <option value="medio">Medio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+
+            <br><br>
+
+            <button style="
+                padding:15px 40px;
+                font-size:18px;
+                background-color:#4CAF50;
+                color:white;
+                border:none;
+                border-radius:8px;
+                cursor:pointer;">
+                
+                Jugar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
