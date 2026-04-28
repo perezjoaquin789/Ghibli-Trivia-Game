@@ -1,6 +1,6 @@
 # Ghibli Trivia 🎬
 
-Aplicación web desarrollada con Flask que consume una API pública de Studio Ghibli.
+Aplicación web desarrollada con el Framework Flask que obtiene datos o informacion de peliculas de una API pública de Studio Ghibli.
 
 ## Funcionalidades
 - Juego de trivia con 10 preguntas
